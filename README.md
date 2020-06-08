@@ -1,4 +1,4 @@
-# AUTOMATED MISSED CALL REPORT FROM GRANDSTREAM
+# AUTOMATED MISSED CALL REPORT FROM GRANDSTREAM IP PBX TELEPHONE SYSTEM.
 This script will allows you to receive daily email alerts of missed calls.
 
 1. Enable CDR API on Grandstream
