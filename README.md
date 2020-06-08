@@ -1,4 +1,4 @@
-# automated-missed-call-report-from-Grandstream
+# AUTOMATED MISSED CALL REPORT FROM GRANDSTREAM
 This script will allows you to receive daily email alerts of missed calls.
 
 1. Enable CDR API on Grandstream
