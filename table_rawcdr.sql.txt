@@ -1,0 +1,49 @@
+--
+-- Set default database
+--
+USE dbgrand;
+
+--
+-- Create table `rawcdr`
+--
+CREATE TABLE rawcdr (
+  AcctId int(255) DEFAULT NULL,
+  accountcode varchar(50) DEFAULT NULL,
+  src int(11) DEFAULT NULL,
+  dst int(11) DEFAULT NULL,
+  dcontext varchar(50) DEFAULT NULL,
+  clid varchar(50) DEFAULT NULL,
+  channel varchar(50) DEFAULT NULL,
+  dstchannel varchar(50) DEFAULT NULL,
+  lastapp varchar(50) DEFAULT NULL,
+  lastdata varchar(100) DEFAULT NULL,
+  start datetime DEFAULT NULL,
+  answer varchar(50) DEFAULT NULL,
+  end datetime DEFAULT NULL,
+  duration int(11) DEFAULT NULL,
+  billsec int(11) DEFAULT NULL,
+  disposition varchar(50) DEFAULT NULL,
+  amaflags varchar(50) DEFAULT NULL,
+  uniqueid double(15, 3) NOT NULL,
+  userfield varchar(50) DEFAULT NULL,
+  channel_ext int(11) DEFAULT NULL,
+  dstchannel_ext int(11) DEFAULT NULL,
+  service varchar(50) DEFAULT NULL,
+  caller_name varchar(50) DEFAULT NULL,
+  recordfiles varchar(50) DEFAULT NULL,
+  dstanswer varchar(50) DEFAULT NULL,
+  chanext varchar(50) DEFAULT NULL,
+  dstchanext varchar(50) DEFAULT NULL,
+  session varchar(50) DEFAULT NULL,
+  action_owner int(11) DEFAULT NULL,
+  action_type varchar(50) DEFAULT NULL,
+  src_trunk_name varchar(50) DEFAULT NULL,
+  dst_trunk_name varchar(50) DEFAULT NULL,
+  email tinyint(1) DEFAULT 0,
+  PRIMARY KEY (uniqueid)
+)
+ENGINE = MYISAM,
+AVG_ROW_LENGTH = 271,
+CHARACTER SET utf8,
+CHECKSUM = 0,
+COLLATE utf8_general_ci;
